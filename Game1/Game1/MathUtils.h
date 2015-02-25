@@ -1,9 +1,16 @@
-#pragma once
+/**
+ * \ MathUtils.h
+ * \brief Used as a helper to math calculations and position
+ * \author Christian Andrade
+ * \date February 13, 2015
+ */
 
+#pragma once
+#include "GameConstants.h"
 // A structure to hold two floats. Similar to SDL_Point (though it contains ints).
 
 
-enum Direction{RIGHT, LEFT};
+
 enum Acceleration {FW, BW, STOP};
 struct Vector2
 {
@@ -38,4 +45,5 @@ class MathUtils
 public:
   static float ToRadians(float degrees);
   static float ToDegrees(float radians);
+  static Direction GetDirection(float angle);
 };

@@ -10,32 +10,10 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Block.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameEngine.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MathUtils.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Projectile.cpp" />
-    <ClCompile Include="Timer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Block.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameConstants.h" />
-    <ClInclude Include="GameEngine.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="MathUtils.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Projectile.h" />
-    <ClInclude Include="Timer.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2A11B47F-71A8-4065-8639-96CCF61E7FBD}</ProjectGuid>
+    <ProjectGuid>{B4A56D4F-A671-41A6-975E-7ED7E40AC98C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Game1</RootNamespace>
+    <RootNamespace>Game2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -62,9 +40,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SDL_image)/include;$(SDL)/include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SDL_image)/lib/x86;$(SDL)/lib/x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -80,7 +56,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -100,6 +75,8 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

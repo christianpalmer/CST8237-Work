@@ -1,3 +1,11 @@
+/**
+ * \class Timer.h
+ * \brief An abstract class that represents a timer
+ * \author Christian Andrade
+ * \date February 13, 2015
+ */
+
+
 #pragma once
 
 class Timer;

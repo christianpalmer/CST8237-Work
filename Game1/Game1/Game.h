@@ -1,6 +1,15 @@
+/**
+ * \class Game.h
+ * \brief An class that represent the Game
+ * \author Christian Andrade
+ * \date February 13, 2015
+ */
 #pragma once
 
 #include "GameEngine.h"
+
+class SDL_Texture;
+
 
 class Game: public GameEngine
 {
@@ -20,4 +29,8 @@ protected:
   Vector2 endPointOffset;
   float speed;
   float rotationSpeed;
+  Block blocks[MAX_BLOCKS];
+  Block walls[MAX_WALLS];
+
+  
 };

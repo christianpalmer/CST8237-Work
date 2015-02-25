@@ -1,3 +1,11 @@
+/**
+ * \class GameObject.h
+ * \brief An abstract class that represents a single object that can  
+ * be placed and manipulated in the world.
+ * \author Christian Andrade
+ * \date February 13, 2015
+ */
+
 #pragma once 
 
 #include "MathUtils.h"
